@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Welcome Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleindex.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>APA PERAN ANDA?</h1>
+            <button onclick="showLogin('admin')">Admin</button>
+            <button onclick="showLogin('user')">User</button>
+        </div>
+
+        <!-- Login Modal -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeLogin()">&times;</span>
+                <h2 id="loginTitle"></h2>
+                <form id="loginForm" onsubmit="return false;">
+                    <input type="password" id="accessCode" placeholder="Enter Access Code" required>
+                    <button onclick="checkAccess()">Login</button>
+                </form>
+                <p id="errorMsg" class="error-msg"></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

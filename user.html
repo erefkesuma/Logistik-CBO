@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>User Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleuser.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>User Page</h1>
+            <form id="userForm">
+                <table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Department</th>
+                            <th>PIC</th>
+                            <th>Item Name</th>
+                            <th>Quantity</th>
+                            <th>Return Date</th>
+                            <th>Voucher Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="number" placeholder="Number" required></td>
+                            <td><input type="text" name="department" placeholder="Department" required></td>
+                            <td><input type="text" name="pic" placeholder="PIC" required></td>
+                            <td><input type="text" name="itemName" placeholder="Item Name" required></td>
+                            <td><input type="number" name="quantity" placeholder="Quantity" required></td>
+                            <td><input type="date" name="returnDate" placeholder="Return Date" required></td>
+                            <td><input type="date" name="voucherDate" placeholder="Voucher Date" required></td>
+                            <td><button type="button" onclick="deleteRow(this)">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" onclick="addRow()">Tambah baris</button>
+                <button type="submit">Submit</button>
+                <p id="successMsg" class="success-msg" style="display: none;">Data submitted successfully!</p>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

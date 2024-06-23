@@ -1,0 +1,13 @@
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #28a745;
+}
+
+button:hover {
+    background-color: #218838;
+}
